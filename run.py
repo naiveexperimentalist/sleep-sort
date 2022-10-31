@@ -17,7 +17,7 @@ import random
 
 def spit_it_out(n: int, que: Queue, gl: Event) -> None:
     gl.wait()  # waiting for the green light from the main thread
-    sleep(n/20)  # carefully calibrated
+    sleep(n/15)  # carefully calibrated
     que.put(n)
 
 
